@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Appointments | Hospital Booking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body data-page="my">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🏥 Hospital Booking</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="appointment.html">Book</a></li>
+          <li class="nav-item"><a class="nav-link active" href="my-appointments.html">My Appointments</a></li>
+          <li class="nav-item ms-lg-3">
+            <a id="loginBtn" class="btn btn-primary" href="login.html">🔐 Login</a>
+          </li>
+          <li class="nav-item ms-lg-2 d-none" id="logoutItem">
+            <button id="logoutBtn" class="btn btn-outline-danger">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light py-4 border-bottom">
+    <div class="container">
+      <h2 class="mb-1">📂 My Appointments</h2>
+      <p class="text-muted">All bookings under your account.</p>
+    </div>
+  </header>
+
+  <main class="py-4">
+    <div class="container">
+      <div id="noData" class="alert alert-info d-none">No appointments yet. Book one from the <a href="appointment.html">booking page</a>.</div>
+      <div class="table-responsive">
+        <table class="table table-striped align-middle">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Doctor</th>
+              <th>Specialization</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Ticket</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="apptTbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 border-top">
+    <div class="container text-center text-muted small">
+      © <span id="year"></span> Hospital Booking — Demo Project
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

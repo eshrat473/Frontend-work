@@ -1,0 +1,31 @@
+/* Basic tweaks */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #0077b6, #00b4d8, #90e0ef);
+}
+
+.feature-card {
+  border-radius: 14px;
+  border: 1px solid #e8eef5;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
+
+.btn-primary, .btn-success {
+  border-radius: 10px;
+}
+
+.navbar-brand { letter-spacing: 0.3px; }
+
+footer { background: #fff; }
+
+.badge-day { background: #eef6ff; color: #0d6efd; }
+
+/* Simple utility for doctor avatars */
+.doc-avatar {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #e9f5ff; display: inline-flex; align-items: center; justify-content: center;
+  font-size: 26px;
+}
